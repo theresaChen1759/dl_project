@@ -1,0 +1,19 @@
+# topo_train_input_path: /scratch.global/chen7924/topomaps_12-1_modelrdy/train
+# topo_test_input_path: /scratch.global/chen7924/topomaps_12-1_modelrdy/test
+topo_full_input_path: /scratch.global/chen7924/topomaps_1130
+geo_train_input_path: /scratch.global/chen7924/geomaps_12-1_modelrdy/train
+geo_test_input_path: /scratch.global/chen7924/geomaps_12-1_modelrdy/test
+positives_dict_path: data/mn_geo-topo_pairs_90OR90.pickle
+model_save_path: weights/1-4_reset_geo-topo/
+results_save_path: outputs/1-4_resnet_geo-topo
+# topo_distances_mtx_path: outputs/1-4_resnet_geo-topo/topo_embeddings.npy
+# geo_distances_mtx_path: outputs/1-4_resnet_geo-topo/geo_embeddings.npy
+
+model_type: resnet
+start_epoch: 0
+epochs: 50
+
+log_wandb: False
+wandb_project: 'Critical-MAAS_Georef'
+wandb_entity: kcompute
+wandb_run_name: ViT_Geo-Topo_1-4
